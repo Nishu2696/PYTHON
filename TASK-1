@@ -1,0 +1,57 @@
+QUESTION-2:
+#Getting input via STDIN
+a = input()
+b = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+c = 0
+for i in range(len(a)):
+    if i > 0 and b[a[i]] > b[a[i - 1]]:
+        c += b[a[i]] - 2 * b[a[i - 1]]
+    else:
+        c += b[a[i]]
+print(c)
+
+QUESTION-3:
+
+a=int(input())
+if a>0 and a<13:
+    if(a!=2):
+        if a<=5 and a==i:
+            if (a%2 == 0):
+                print(30)
+            else:
+                print(31)
+        else:
+            if(a%2 == 0):
+                print(31)
+            else:
+                print(30)
+    else:
+        print(28)
+else:
+    print("Error")
+
+QUESTION-4:
+
+def value(x):
+    print("hii")
+    #print(x)
+    b=""
+    c=len(x)
+    print(c)
+    d="";
+    for val in range(c):
+        print(x[val])
+        print(val)
+        if(val+1 == c):
+            b+="and "+x[val]
+        else:
+            b+=x[val]+", "
+        #d=d+1
+    print(b)
+        
+a=['apples', 'bananas', 'tofu', 'soya']
+print(len(a))
+print(a)
+value(a)
+print("hello")
+
